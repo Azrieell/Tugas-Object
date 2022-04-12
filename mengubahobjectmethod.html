@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengubah Object Method</title>
+</head>
+
+<body>
+    <script>
+        //Program 1
+        var siswa = {
+            nama: 'Harry Maguire',
+            absen: 12,
+            jabatan: 'KM',
+            tampilkan: function () {
+                alert(`Nama: ${this.nama}, absen: ${this.absen}, Jabatan: ${this.jabatan}`)
+            }
+        }
+        siswa.tampilkan = function nama() {
+            alert('Nama : Harry Maguire')
+        }
+        siswa.tampilkan()
+
+        //Pragram 2
+
+        var motor = {
+            type: "Honda",
+            model: "street",
+            colour: "black",
+            tampilkan: function () {
+                alert(`Type: ${this.type}, Model: ${this.model}, Colour: ${this.colour}`)
+            }
+        }
+        motor.tampilkan = function type(){
+            alert('Type Honda')
+        }
+        motor.tampilkan()
+    </script>
+</body>
+</html>
